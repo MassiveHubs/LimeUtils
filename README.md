@@ -1,29 +1,50 @@
-# LimeUtils
+## LimeUtils
 
 ![LimeUtils Icon](https://github.com/MassiveHubs/LimeUtils/raw/main/LimeUtils.png)
 
 LimeUtils its module loadstring script for create your scripts on roblox! With 10+ utils, like cam shot.
 
-# Docs
+## Docs
 You can see Docs by this [link](https://limedocs.gitbook.io/limeutils/how-to-use/explaination).
 
-# Functions
-util.username()
+## Functions
 
-util.displayName()
+# Player Utilities:
 
-util.userId()
+1. util.username()
 
-util.realUsername()
+2. util.displayName()
 
-util.getLocalPlayerThumbnail()
+3. util.userId()
 
-util.getTimeOfDay()
+4. util.realUsername()
 
-util.setTimeOfDay(time)
+5. util.getLocalPlayerThumbnail()
 
-util.getPlayerPosition()
+6. util.getPlayerPosition()
 
-util.teleportPlayer(position)
+7. util.teleportPlayer(position)
 
-util.getAllPlayers()
+8. util.getAllPlayers()
+
+# Physics Utilities:
+
+1. util.setGravity(gravity)
+
+2. util.getGravity()
+
+# Audio Utilities:
+
+1. util.playSound(soundId, options)
+
+2. util.stopAllSounds(parent)
+
+# Debug Utilities:
+
+1. util.measurePerformance(func, ...)
+
+2. util.dumpObject(obj, maxDepth)
+
+# Advanced Utilities:
+
+1. util.raycast(origin, direction, params)
