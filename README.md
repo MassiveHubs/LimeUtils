@@ -2,7 +2,7 @@
 
 ![LimeUtils Icon](https://github.com/MassiveHubs/LimeUtils/raw/main/LimeUtils.png)
 
-LimeUtils its module loadstring script for create your scripts on roblox! With 10+ utils, like cam shot.
+LimeUtils its module loadstring script for create your scripts on roblox! With 15 funcs, like cam shot.
 
 # Docs
 You can see Docs by this [link](https://limedocs.gitbook.io/limeutils/how-to-use/explaination).
