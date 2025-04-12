@@ -95,14 +95,22 @@ end
 function util.dumpObject(obj, maxDepth)
     maxDepth = maxDepth or 3
     local function recurse(o, depth)
+        if type(o) ~= "table" then
+            return tostring(o)
+        end
         if depth > maxDepth then return "..." end
         local str = "{"
-        for k,v in pairs(o) do
-            str ..= tostring(k).." = "
-            str ..= type(v) == "table" and recurse(v, depth + 1) or tostring(v)
-            str ..= ", "
+        local first = true
+        for k, v in pairs(o) do
+            if first then
+                first = false
+            else
+                str = str .. ", "
+            end
+            str = str .. tostring(k) .. " = " .. recurse(v, depth + 1)
         end
-        return str:sub(1, -3).."}"
+        str = str .. "}"
+        return str
     end
     return recurse(obj, 1)
 end
